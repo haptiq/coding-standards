@@ -13,6 +13,7 @@
 	<!-- Add <rule ref="WordPress-Docs"/> to also enforce docblock requirements -->
 	<rule ref="WordPress-Core">
 		<type>warning</type>
+		<exclude name="WordPress.PHP.YodaConditions"/> <!--  Enforce YodaConditions, we do not. -->
 	</rule>
 	<rule ref="WordPress-Extra">
 		<type>warning</type>
