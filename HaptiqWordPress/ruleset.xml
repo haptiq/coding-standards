@@ -17,7 +17,11 @@
 	</rule>
 	<rule ref="WordPress-Extra">
 		<type>warning</type>
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
 	</rule>
+
+	<!-- Enforce short array syntax [] over array() -->
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 
 	<!-- PHP + WordPress API version compatibility -->
 	<rule ref="PHPCompatibilityWP">
