@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="HaptiqWordPress" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+	<description>Haptiq Coding Standards for WordPress development</description>
+
+	<!--
+		Severity type controls whether a violation fails the build:
+		  error   → non-zero exit code, blocks CI
+		  warning → reported but does not block CI
+		Change <type> inside any <rule> block to switch behaviour for that group.
+	-->
+
+	<!-- WordPress coding standards -->
+	<!-- Add <rule ref="WordPress-Docs"/> to also enforce docblock requirements -->
+	<rule ref="WordPress-Core">
+		<type>warning</type>
+	</rule>
+	<rule ref="WordPress-Extra">
+		<type>warning</type>
+	</rule>
+
+	<!-- PHP + WordPress API version compatibility -->
+	<rule ref="PHPCompatibilityWP">
+		<type>warning</type>
+	</rule>
+
+	<!-- PHP version range to check compatibility against (matches composer.json) -->
+	<config name="testVersion" value="7.4-8.4"/>
+
+	<!-- Minimum WordPress version this codebase needs to support -->
+	<config name="minimum_supported_wp_version" value="6.8"/>
+
+	<!-- Scan only PHP files by default -->
+	<arg name="extensions" value="php"/>
+</ruleset>
