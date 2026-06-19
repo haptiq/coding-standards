@@ -17,7 +17,7 @@ The [Composer installer plugin](https://github.com/PHPCSStandards/composer-insta
 Run PHPCS with the `HaptiqWordPress` standard:
 
 ```bash
-vendor/bin/phpcs --standard=HaptiqWordPress src/
+vendor/bin/phpcs --standard=HaptiqWordPress .
 ```
 
 Or copy the provided `phpcs.xml.dist` to your project root as `phpcs.xml` and run:
@@ -25,6 +25,12 @@ Or copy the provided `phpcs.xml.dist` to your project root as `phpcs.xml` and ru
 ```bash
 vendor/bin/phpcs
 ```
+
+If `phpcs.xml` configures the use of `HaptiqWordPress`, run:
+
+```bash
+vendor/bin/phpcs
+````
 
 ## What it checks
 
