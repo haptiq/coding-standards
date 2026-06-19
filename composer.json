@@ -3,6 +3,18 @@
 	"description": "Haptiq Coding Standards",
 	"type": "phpcodesniffer-standard",
 	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Haptiq",
+			"email": "hello@haptiq.studio",
+			"homepage": "https://haptiq.studio"
+		}
+	],
+	"keywords": ["phpcs", "wordpress", "coding-standards", "wpcs"],
+	"support": {
+		"issues": "https://github.com/haptiq/coding-standards/issues",
+		"source": "https://github.com/haptiq/coding-standards"
+	},
 	"require": {
 		"php": "^7.4 || ^8.0",
 		"phpcompatibility/phpcompatibility-wp": "^2.1.8",
