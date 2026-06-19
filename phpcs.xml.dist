@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<ruleset name="My Project">
+
+	<!-- Paths to scan – adjust to your project structure -->
+	<file>.</file>
+
+	<!-- Exclude common non-project paths -->
+	<exclude-pattern>vendor/</exclude-pattern>
+
+	<!-- Use the Haptiq WordPress standard -->
+	<rule ref="HaptiqWordPress"/>
+
+	<!--
+		Optional: promote specific groups to errors to block CI.
+		Remove the comment to activate.
+	-->
+	<!--
+	<rule ref="WordPress-Core">
+		<type>error</type>
+	</rule>
+	<rule ref="WordPress-Extra">
+		<type>error</type>
+	</rule>
+	-->
+
+	<!--
+		Optional: override the minimum supported WP version for this project.
+		Defaults to the version set in the HaptiqWordPress standard.
+	-->
+	<!-- <config name="minimum_supported_wp_version" value="6.8"/> -->
+
+	<!--
+		Optional: enforce docblock requirements (not included by default).
+	-->
+	<!-- <rule ref="WordPress-Docs"/> -->
+
+	<!-- Show progress and use colours in terminal output -->
+	<arg value="sp"/>
+	<arg name="colors"/>
+
+</ruleset>
